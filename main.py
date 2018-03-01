@@ -6,12 +6,7 @@ Created on Thu Mar  1 18:42:57 2018
 @author: mateusztybura
 """
 
-from classes.input_data import InputData
+from classes.simulator import Simulator
 
-def readfile(filepath):
-    with open(filepath) as f:
-        content = f.readlines()
-    return [x.strip() for x in content]
-
-raw_data = readfile('./data/a_example.in')
-parsed_data = InputData(raw_data)
+sim = Simulator('./data/a_example.in', './results/a_example.out')
+sim.run()

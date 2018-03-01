@@ -7,9 +7,10 @@ Created on Thu Mar  1 18:55:34 2018
 """
 
 class Ride:
-    def __init__(self, data):
+    def __init__(self, data, index):
         #ride from [0, 0] to [1, 3], earliest start 2, latest finish 9
         row = data.split(" ")
+        self.index = index
         self.start = (int(row[0]), int(row[1]))
         self.stop = (int(row[2]), int(row[3]))
         self.earliest_start = int(row[4])
