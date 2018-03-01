@@ -14,3 +14,4 @@ class Ride:
         self.stop = (int(row[2]), int(row[3]))
         self.earliest_start = int(row[4])
         self.latest_finish = int(row[5])
+        self.base_distance = self.start[0] + self.start[1]
