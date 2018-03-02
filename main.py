@@ -8,5 +8,5 @@ Created on Thu Mar  1 18:42:57 2018
 
 from classes.simulator import Simulator
 
-sim = Simulator('./data/b_should_be_easy.in', './results/b_should_be_easy.out')
+sim = Simulator('./data/e_high_bonus.in', './results/e_high_bonus.out')
 sim.run()
